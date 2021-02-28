@@ -1,0 +1,169 @@
+@font-face {
+  font-family: charter;
+  src: url("../fonts/charter-regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: charter;
+  src: url("../fonts/charter-italic.otf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: charter;
+  src: url("../fonts/charter-bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: charter;
+  src: url("../fonts/charter-bold-italic.otf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--gray30);
+  font-family: charter;
+  margin: 0;
+}
+a {
+  color: var(--gray30);
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+.header-content {
+  position: relative;
+}
+header {
+  font-size: 14px;
+  width: 188px;
+  color: var(--gray10);
+  position: absolute;
+  z-index: 1;
+  top: 64px;
+  left: -232px;
+}
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--gray30);
+}
+header li {
+  margin-bottom: 16px;
+}
+nav details summary {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 64px 0px 16px 0px;
+  font-weight: 400;
+}
+/* h1 + p {
+  margin-bottom: 64px;
+} */
+hr {
+  margin: 64px 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 64px 0 40px 0;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1.5em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+pre {
+  background: #fec62e;
+  padding: 40px;
+  font-family: "Roboto";
+  line-height: 24px;
+}
+blockquote {
+  margin: 32px 0;
+  padding-left: 16px;
+  font-size: 24px;
+  border-left: 4px solid var(--gray30);
+  line-height: 24px;
+}
+blockquote span {
+  color: var(--gray10);
+}
+blockquote span:before {
+  content: "-";
+}
+
+.main {
+}
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+.main-content {
+  background-color: white;
+}
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url("../images/patron-1.png");
+  height: 350px;
+}
+.content {
+  margin-top: 164px;
+}
+.content:first-of-type {
+  margin: 0;
+}
+.content ol li {
+  line-height: 24px;
+}
+.content ul li {
+  margin-bottom: 16px;
+}
+.content + hr {
+  display: none;
+}
+.content img {
+  margin-top: 40px;
+}
+.content {
+  counter-reset: titleList;
+}
+.content h3 {
+  counter-increment: titleList;
+  padding-bottom: 8px;
+}
+.content h3::before {
+  content: counter(titleList, decimal) ". ";
+}
+.content h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
