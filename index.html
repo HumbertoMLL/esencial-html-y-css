@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="El podcast de Beto" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://humbertomll.github.io/esencial-html-y-css/" />
+    <meta property="og:image" content="https://humbertomll.github.io/esencial-html-y-css/images/dom.png" />
+    <meta
+      name="description"
+      content="Aprende algo nuevo cada día, aquí charlamos de marketing, crecimiento personal, tecnología y alguna cosa random de vez en cuando"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/styles-logical.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -222,12 +247,63 @@
             </ul>
           </section>
 
-          <h2>Modelo de caja</h2>
-          <a target="_blank" href="https://leonidasesteban.com">Web de leo</a>
+          <div class="content">
+            <h2>Video cool</h2>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1pxNfNfAKIs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1pxNfNfAKIs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1pxNfNfAKIs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-2" class="slider-bullet"></a>
+                <a href="#video-3" class="slider-bullet"></a>
+              </div>
+            </div>
+          </div>
           <p>
             Si tienes una duda escríbeme a
             <a href="mailto:humbertolopez954@gmail.com">humbertolopez954@gmail.com</a>
           </p>
+          <div class="content">
+            <h2>Ingresa a nuestro newsletter</h2>
+            <form action="" class="form">
+              <input placeholder="Nombre" type="text" required />
+              <input type="text" placeholder="Email" required />
+              <input type="submit" value="Suscribirme" />
+            </form>
+          </div>
         </div>
       </div>
     </main>
